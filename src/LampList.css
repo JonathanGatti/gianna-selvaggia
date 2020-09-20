@@ -1,0 +1,5 @@
+.Lamp-list {
+  display: flex;
+  justify-content: space-around;
+;
+}
