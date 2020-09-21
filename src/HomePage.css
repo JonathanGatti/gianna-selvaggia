@@ -1,0 +1,47 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.HomePage-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.HomePage-header-text h1 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+.HomePage-header-text {
+  display: flex; 
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  align-items: center;
+  text-align: center;
+  margin-left: 5rem;
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+}
+
+.HomePage-img {
+  width: 40%;
+  height: 40%;
+  float: right;
+  margin-right: 0;
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.HomePage-link {
+  margin-top: 2em;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: white;
+}
