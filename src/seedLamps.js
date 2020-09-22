@@ -4,7 +4,7 @@ export default [
     price: '£300',
     description: 'RUSTY IRON NET OPEN CYLINDER',
     type: 'table lamp',
-    src: 'imgs/alianor.jpg',
+    src: 'alianor.jpg',
     dimension: {
       height: 57.5,
       widht: 19.5,
@@ -16,7 +16,7 @@ export default [
     price: '£300',
     description: 'ROLLED BEATEN COPPER OPEN CYLINDER',
     type: 'table lamp',
-    src: 'imgs/mante.jpg',
+    src: 'mante.jpg',
     dimension: {
       height: 47,
       lenght: 15,
@@ -28,7 +28,7 @@ export default [
     price: '£300',
     description: 'ROLLED BEATEN COPPER OPEN CYLINDER',
     type: 'table lamp',
-    src: 'imgs/cirene.jpg',
+    src: 'cirene.jpg',
     dimension: {
       height: 47,
       lenght: 15,
@@ -40,7 +40,7 @@ export default [
     price: '£270',
     description: 'ROLLED BEATEN COPPER OPEN CYLINDER',
     type: 'table lamp',
-    src: 'imgs/plares.jpg',
+    src: 'plares.jpg',
     dimension: {
       height: 40,
       lenght: 13,
@@ -52,7 +52,7 @@ export default [
     price: '£300',
     description: 'BURNT WOODEN LOG',
     type: 'table lamp',
-    src: 'imgs/hadrian.jpg',
+    src: 'hadrian.jpg',
     dimension: {
       height: 53,
       lenght: 19,
@@ -64,7 +64,7 @@ export default [
     price: '£300',
     description: 'COPPER SPIRAL WITH ENGRAVED PENDANTS',
     type: 'ceiling lamp',
-    src: 'imgs/lucrezia.jpg',
+    src: 'lucrezia.jpg',
     dimension: {
       height: 25,
       lenght: 18,
@@ -76,7 +76,7 @@ export default [
     price: '£270',
     description: 'PYROGRAPHY ON WOODEN BASE WITH BEATEN ROLLED GRINDED BURGUNDI METAL CAR',
     type: 'table lamp',
-    src: 'imgs/krea.jpg',
+    src: 'krea.jpg',
     dimension: {
       height: 25,
       lenght: 16,
@@ -88,7 +88,7 @@ export default [
     price: '£330',
     description: 'ENGRAVED COPPER WIHT CRYSTALS AND COPPER PENDANTS COPPER WIRE',
     type: 'ceiling lamp',
-    src: 'imgs/spiral.jpg',
+    src: 'spiral.jpg',
     dimension: {
       height: 68,
       lenght: 42,

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './Lamp.css'
+import './Lamp.css';
 
 class Lamp extends Component{
   render(){
-    const { name, src, price, type} = this.props.lamp;
-    const imgSrc = process.env.PUBLIC_URL + src;
-    console.log(imgSrc)
+    const { name, src, price, type, description, dimension} = this.props.lamp;
+    console.log(src)
     return ( 
       <div className='Lamp' key={name}>
         <h1 >{name}</h1>
-        <img className='Lamp-img' src={imgSrc} alt={name} />
+        <img src={require(`./imgs/${src}`)} />
+        <p>{description}</p>
         <p>{price}</p>
         <p>{type}</p>
       </div>      
