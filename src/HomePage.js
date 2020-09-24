@@ -19,7 +19,7 @@ class HomePage extends Component {
         </div>
         <div className='Links-container'>
           <div className='HomePage-link' >
-            <Link to='/lamps/ceiling'>Ceiling Lamps</Link>
+            <Link to='/lamps/ceiling'>Chandeliers</Link>
             <img src={require('./imgs/lucrezia.jpg')} alt='chandelier link'/>
           </div>
           <div className='HomePage-link'>
@@ -29,6 +29,10 @@ class HomePage extends Component {
           <div className='HomePage-link'>
             <Link to='/lamps/table'>Table Lamps</Link>
             <img src={require('./imgs/cirene.jpg')} alt='table lamps link'/>
+          </div>
+          <div className='HomePage-link'>
+            <Link to='/lamps/clocks'>The Time Collection</Link>
+            <img src={require('./imgs/cirene.jpg')} alt='clocks link'/>
           </div>
         </div>
       </div>
