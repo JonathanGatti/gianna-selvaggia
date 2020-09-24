@@ -10,9 +10,9 @@ function Navbar(props){
         <Link className='Navbar-link' to='/'>About</Link>
       </div>
       <div className='Navbar-icons'>
-        <i class="fa fa-instagram fa-2x"></i>
-        <i class="fa fa-facebook fa-2x"></i>
-        <i class="fa fa-envelope fa-2x"></i>
+        <i className="fa fa-instagram fa-2x"></i>
+        <i className="fa fa-facebook fa-2x"></i>
+        <i className="fa fa-envelope fa-2x"></i>
       </div>
     </nav>
   )

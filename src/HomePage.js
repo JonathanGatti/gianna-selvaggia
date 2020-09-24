@@ -12,7 +12,7 @@ class HomePage extends Component {
             <p>I LIKE TO RECYCLE BECAUSE MORE OR LESS ANYTHING CAN BE RECYCLED. IT IS TIME TO BE AWARE OF HOW TO CONTRIBUTE TO RECYCLING  AND ENLIGHTEN THE WORLD THROUGHOUT THE USE OF SALVAGED MATERIALS, BRINGING BACK THE BALANCE BETWEEN DARKNESS AND LIGHT
             </p>
             </div>
-            <img className='HomePage-img' src={require('./imgs/home/homepage.jpg')} alt='homepage image'/>
+            <img className='HomePage-img' src={require('./imgs/home/homepage.jpg')} alt='homepage'/>
         </div>
         <div>
           <h2>Discover The Catalogue</h2>

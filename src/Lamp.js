@@ -9,7 +9,7 @@ class Lamp extends Component{
     return ( 
       <div className='Lamp' key={name}>
         <h1 >{name}</h1>
-        <img src={require(`./imgs/${src}`)} />
+        <img src={require(`./imgs/${src}`)} alt={`${name}`}/>
         <p>{description}</p>
         <p>{price}</p>
         <p>{type}</p>
