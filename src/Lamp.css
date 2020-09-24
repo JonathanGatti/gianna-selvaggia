@@ -2,6 +2,9 @@
   width: 30%;
   height: 30%;
   justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Lamp-img {
@@ -9,7 +12,9 @@
   height: 250px;
 }
 
-.img {
-  width: 100px;
-  height: 100px
+.Back-button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 26px;
 }

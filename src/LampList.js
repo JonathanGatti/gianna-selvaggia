@@ -5,9 +5,7 @@ import './LampList.css';
 
 class LampList extends Component{
   render(){
-    let type = this.props.match.params.type;
-    console.log(type)
-    console.log(this.props.lamps[0].type)
+    const { type } = this.props.match.params;
 
     const getType = (type) =>{
       const lampType = this.props.lamps.filter(lamp =>
@@ -15,16 +13,16 @@ class LampList extends Component{
       )
       return lampType
     }
+
     return  (
       <div className='Lamp-list'>
-        {getType(this.props.match.params.type).map(lamp => (
-          <div>
-            <h1>{lamp.name}</h1>
-            <p>{lamp.type}</p>
+        {getType(type).map(lamp => (
+          <div className='Lamp'>
+            <Link className='Lamp-title'to={`/lamps/${lamp.type}/${lamp.name}`} >{lamp.name}</Link>
             <img src={require(`./imgs/${lamp.src}`)} />
-            <Link to={`/lamps/${lamp.type}/${lamp.name}`} >discover more</Link>
           </div>
         ))}
+        <Link to='/'>Go Back</Link>
       </div>
     )
   }

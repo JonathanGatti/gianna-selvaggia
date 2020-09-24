@@ -1,0 +1,17 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Navbar-link {
+  font-size: 26px;
+  margin: 1em;
+}
+
+.Navbar-icons {
+  margin-right: 1rem;
+}
+
+.fa {
+  margin: 0 10px;
+}

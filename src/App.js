@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import seedLamps from './seedLamps';
 import LampList from './LampList';
 import HomePage from './HomePage';
+import Navbar from './Navbar';
 import Lamp from './Lamp';
 import { Route, Switch } from 'react-router-dom';
 
@@ -19,11 +20,10 @@ class App extends Component {
 
     return (
       <div>
+        <Navbar />
         <Switch>
           <Route exact path='/' render={() => <HomePage lamps={seedLamps}/>} />
           <Route exact path='/lamps/:type' render={(routeProps) => <LampList {...routeProps} lamps={seedLamps} />} />
-          {/* <Route exact path='/lamps/floor' render={() => <LampList lamps={seedLamps} />} />
-          <Route exact path='/lamps/table' render={() => <LampList lamps={seedLamps} />} /> */}
           <Route exact path='/lamps/:type/:name' 
                 render={getLamp} />
         </Switch>

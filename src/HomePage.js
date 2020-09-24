@@ -18,10 +18,10 @@ class HomePage extends Component {
           <Link className='HomePage-link' to='/lamps/ceiling'>Ceiling Lamps</Link>
         </div>
         <div>
-          <Link className='HomePage-link' to='/lamps/floor'>floor Lamps</Link>
+          <Link className='HomePage-link' to='/lamps/floor'>Floor Lamps</Link>
         </div>
         <div>
-          <Link className='HomePage-link' to='/lamps/table'>table Lamps</Link>
+          <Link className='HomePage-link' to='/lamps/table'>Table Lamps</Link>
         </div>
       </div>
 
