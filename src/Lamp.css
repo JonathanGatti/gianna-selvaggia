@@ -7,9 +7,10 @@
   margin-right: auto;
 }
 
-.Lamp-img {
-  width: 250px;
-  height: 250px;
+.Lamp img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
 }
 
 .Back-button {

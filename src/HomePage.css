@@ -29,6 +29,11 @@
   letter-spacing: 0.3rem;
 }
 
+.HomePage h2 {
+  font-weight: 300;
+  font-size: 28px;
+}
+
 .HomePage-img {
   width: 40%;
   height: 40%;
@@ -38,10 +43,25 @@
   margin-top: 0;
 }
 
+.Links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .HomePage-link {
-  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2em 2em;
   font-size: 24px;
   letter-spacing: 0.1em;
   text-decoration: none;
   color: white;
+}
+
+.HomePage-link img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
 }

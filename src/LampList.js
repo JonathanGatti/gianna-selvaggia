@@ -15,14 +15,18 @@ class LampList extends Component{
     }
 
     return  (
-      <div className='Lamp-list'>
+      <div className='container'>
+        <div className='Lamp-list'>
         {getType(type).map(lamp => (
           <div className='Lamp'>
             <Link className='Lamp-title'to={`/lamps/${lamp.type}/${lamp.name}`} >{lamp.name}</Link>
-            <img src={require(`./imgs/${lamp.src}`)} />
+            <img className='Lamp-img' src={require(`./imgs/${lamp.src}`)} />
           </div>
         ))}
-        <Link to='/'>Go Back</Link>
+        </div>
+        <div className='Lamp-link'>
+          <Link to='/'>Go Back</Link>
+        </div>
       </div>
     )
   }
