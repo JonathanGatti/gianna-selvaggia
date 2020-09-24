@@ -16,12 +16,15 @@ class App extends Component {
       )
       return <Lamp {...props} lamp={currLamp}/>;
     }
+
     return (
       <div>
         <Switch>
-          <Route exact path='/' render={() => <HomePage />} />
-          <Route exact path='/lamps' render={() => <LampList lamps={seedLamps} />} />
-          <Route exact path='/lamps/:name' 
+          <Route exact path='/' render={() => <HomePage lamps={seedLamps}/>} />
+          <Route exact path='/lamps/:type' render={(routeProps) => <LampList {...routeProps} lamps={seedLamps} />} />
+          {/* <Route exact path='/lamps/floor' render={() => <LampList lamps={seedLamps} />} />
+          <Route exact path='/lamps/table' render={() => <LampList lamps={seedLamps} />} /> */}
+          <Route exact path='/lamps/:type/:name' 
                 render={getLamp} />
         </Switch>
       </div>

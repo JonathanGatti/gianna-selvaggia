@@ -14,7 +14,15 @@ class HomePage extends Component {
             </div>
             <img className='HomePage-img' src={require('./imgs/home/homepage.jpg')} alt='HomePage-img'/>
         </div>
-        <Link className='HomePage-link' to='/lamps'>Discover The Catalogue</Link>
+        <div>
+          <Link className='HomePage-link' to='/lamps/ceiling'>Ceiling Lamps</Link>
+        </div>
+        <div>
+          <Link className='HomePage-link' to='/lamps/floor'>floor Lamps</Link>
+        </div>
+        <div>
+          <Link className='HomePage-link' to='/lamps/table'>table Lamps</Link>
+        </div>
       </div>
 
     )
