@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
@@ -15,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
     flexBasis: '25%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column'
   },
   root: {
     flexGrow: 1,
@@ -37,9 +39,9 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'none',
-    color: 'black',
+    color: 'rgba(255,255,255,0.7)',
     marginLeft: '0.35em',
-    fontSize: '1.5em'
+    fontSize: '2rem',
   }
 }));
 
@@ -65,25 +67,22 @@ export default function LampList(props) {
                       src={require(`./imgs/${lamp.src}`)} alt='lamp' />
                 </CardMedia>
                 <CardActionArea>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {lamp.name}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                      {lamp.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Link className={classes.link}
-                        to={`/lamps/${lamp.type}/${lamp.name}`} >
-                        Discover More
+                  <Link gutterBottom className={classes.link} to={`/lamps/${lamp.type}/${lamp.name}`}>
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        {lamp.name}
+                      </Typography>
+                      <Typography variant="body2" color="textSecondary" component="p">
+                        {lamp.description}
+                      </Typography>
+                    </CardContent>
                   </Link>
-                </CardActions>
+                </CardActionArea>
               </Card>
             </Grid>
           ))}
         </Grid>
+        <Link className={classes.link}to='/'>Go Back</Link>
     </div>
   );
 }
