@@ -4,7 +4,7 @@ import './Lamp.css';
 
 class Lamp extends Component{
   render(){
-    const { name, src, price, type, description, dimension} = this.props.lamp;
+    const { name, src, price, description, dimension} = this.props.lamp;
     const { history } = this.props
     return ( 
       <div className='Lamp' key={name}>
@@ -12,9 +12,12 @@ class Lamp extends Component{
         <img src={require(`./imgs/${src}`)} alt={`${name}`}/>
         <p>{description}</p>
         <p>{price}</p>
-        <p>{type}</p>
         <div>
-          <button className='Back-button' onClick={() => history.goBack()}>Go Back</button>
+          <button 
+            className='Back-button' 
+            onClick={() => history.goBack()}>
+              Go Back
+          </button>
         </div>
       </div>      
     )

@@ -19,20 +19,28 @@ class HomePage extends Component {
         </div>
         <div className='Links-container'>
           <div className='HomePage-link' >
-            <Link to='/lamps/ceiling'>Chandeliers</Link>
+            <Link to='/lamps/ceiling'>
+              <p>Chandeliers</p>
             <img src={require('./imgs/lucrezia.jpg')} alt='chandelier link'/>
+            </Link>
           </div>
           <div className='HomePage-link'>
-            <Link to='/lamps/floor'>Floor Lamps</Link>
+            <Link to='/lamps/floor'>
+              <p>Floor Lamps</p>
             <img src={require('./imgs/lucrezia.jpg')} alt='floor lamps link'/>
+            </Link>
           </div>
           <div className='HomePage-link'>
-            <Link to='/lamps/table'>Table Lamps</Link>
+            <Link to='/lamps/table'>
+              <p>Table Lamps</p>
             <img src={require('./imgs/cirene.jpg')} alt='table lamps link'/>
+            </Link>
           </div>
           <div className='HomePage-link'>
-            <Link to='/lamps/clocks'>The Time Collection</Link>
+            <Link to='/lamps/clocks'>
+              <p>The Time Collection</p>
             <img src={require('./imgs/cirene.jpg')} alt='clocks link'/>
+            </Link>
           </div>
         </div>
       </div>
