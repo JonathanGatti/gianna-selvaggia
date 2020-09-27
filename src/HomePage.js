@@ -31,12 +31,6 @@ class HomePage extends Component {
             </Link>
           </div>
           <div className='HomePage-link'>
-            <Link to='/lamps/floor'>
-              <p>Floor Lamps</p>
-            <img src={require('./imgs/lucrezia.jpg')} alt='floor lamps link'/>
-            </Link>
-          </div>
-          <div className='HomePage-link'>
             <Link to='/lamps/table'>
               <p>Table Lamps</p>
             <img src={require('./imgs/krea.jpg')} alt='table lamps link'/>
