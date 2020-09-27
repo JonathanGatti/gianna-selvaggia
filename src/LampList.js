@@ -6,9 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -43,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: 'none',
-    color: 'rgba(255,255,255,0.7)',
+    color: 'rgba(255,255,255,0.9)',
     marginLeft: '0.35em',
     fontSize: '2rem',
   }
@@ -71,12 +69,18 @@ export default function LampList(props) {
                       src={require(`./imgs/${lamp.src}`)} alt='lamp' />
                 </CardMedia>
                 <CardActionArea>
-                  <Link gutterBottom className={classes.link} to={`/lamps/${lamp.type}/${lamp.name}`}>
+                  <Link 
+                    gutterBottom 
+                    className={classes.link} 
+                    to={`/lamps/${lamp.type}/${lamp.name}`}>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">
                         {lamp.name}
                       </Typography>
-                      <Typography variant="body2" color="textSecondary" component="p">
+                      <Typography 
+                        variant="body2" 
+                        color="textSecondary" 
+                        component="p">
                         {lamp.description}
                       </Typography>
                     </CardContent>

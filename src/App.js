@@ -6,9 +6,7 @@ import Navbar from './Navbar';
 import Lamp from './Lamp';
 import { Route, Switch } from 'react-router-dom';
 
-
 class App extends Component {
-  
   render() {
     const getLamp = props =>{
       let name = props.match.params.name;
@@ -17,15 +15,17 @@ class App extends Component {
       )
       return <Lamp {...props} lamp={currLamp}/>;
     }
-
     return (
       <div>
         <Navbar />
         <Switch>
           <Route exact path='/' render={() => <HomePage lamps={seedLamps}/>} />
-          <Route exact path='/lamps/:type' render={(routeProps) => <LampList {...routeProps} lamps={seedLamps} />} />
-          <Route exact path='/lamps/:type/:name' 
-                render={getLamp} />
+          <Route 
+            exact 
+            path='/lamps/:type' 
+            render={(routeProps) => 
+              <LampList {...routeProps} lamps={seedLamps} />} />
+          <Route exact path='/lamps/:type/:name' render={getLamp} />
         </Switch>
       </div>
     );
