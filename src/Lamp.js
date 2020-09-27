@@ -1,27 +1,106 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
-import './Lamp.css';
+import { Link } from 'react-router-dom';
+import ContactPage from './ContactPage'
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
-class Lamp extends Component{
-  render(){
-    const { name, src, price, description, dimension} = this.props.lamp;
-    const { history } = this.props
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    margin: 'auto',
+    maxWidth: '45%',
+    backgroundColor: 'rgba(255,255,255,0.5)',
+  },
+  image: {
+    width: 250,
+    height: 250,
+  },
+  img: {
+    maxWidth: '100%',
+    maxHeight: '100%',
+  },
+  title: {
+    fontSize: '2.5rem'
+  },
+  description: {
+    fontSize: '1.1em'
+  },
+  price: {
+    fontSize: '2rem'
+  },
+  btns: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
+}));
+
+function Lamp (props){
+    const classes = useStyles();
+    const { name, src, price, description, dimension} = props.lamp;
+    const { history } = props;
+
     return ( 
-      <div className='Lamp' key={name}>
-        <h1 >{name}</h1>
-        <img src={require(`./imgs/${src}`)} alt={`${name}`}/>
-        <p>{description}</p>
-        <p>{price}</p>
-        <div>
-          <button 
-            className='Back-button' 
-            onClick={() => history.goBack()}>
-              Go Back
-          </button>
-        </div>
-      </div>      
+      <div className={classes.root}>
+        <Paper className={classes.paper}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <ButtonBase className={classes.image}>
+                <img className={classes.img} alt={`${name}`} src={require(`./imgs/${src}`)} />
+              </ButtonBase>
+            </Grid>
+            <Grid item xs={12} sm container>
+              <Grid item xs container direction="column" spacing={2}>
+                <Grid item xs>
+                  <Typography className={classes.title} gutterBottom variant="subtitle1">
+                    {name}
+                  </Typography>
+                  <Typography className={classes.description} variant="body2" gutterBottom>
+                    {description}
+                  </Typography>
+                  <Typography className={classes.description} variant="body2" gutterBottom>
+                    Dimensions:
+                  </Typography>
+                  <Typography className={classes.description} variant="body2" color="textSecondary">
+                    Height: {dimension.height}, Length: {dimension.length}, Width: {dimension.width}
+                  </Typography>
+                </Grid>
+                <Grid className={classes.btns} item>
+                  <Typography variant="body2" style={{ cursor: 'pointer' }}>
+                  <Button 
+                    variant='contained'
+                    color='default'
+                    className={classes.btn}
+                    onClick={() => history.goBack()}>
+                    Go Back
+                  </Button>
+                  </Typography>
+                  <Typography variant="body2" style={{ cursor: 'pointer' }}>
+                  <Button component={ Link } 
+                          variant='contained'
+                          color='default' to='/contact' 
+                          className={classes.link} >
+                    Contact Us
+                  </Button>
+                  </Typography>
+                </Grid>
+              </Grid>
+              <Grid item>
+                <Typography className={classes.price} variant="subtitle1">{price}</Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Paper>
+      </div> 
     )
-  }
 }
 
 export default withRouter(Lamp);

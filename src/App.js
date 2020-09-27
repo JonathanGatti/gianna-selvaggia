@@ -4,6 +4,7 @@ import LampList from './LampList';
 import HomePage from './HomePage';
 import Navbar from './Navbar';
 import Lamp from './Lamp';
+import ContactPage from './ContactPage';
 import { Route, Switch } from 'react-router-dom';
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
             render={(routeProps) => 
               <LampList {...routeProps} lamps={seedLamps} />} />
           <Route exact path='/lamps/:type/:name' render={getLamp} />
+          <Route exact path='/contact' render={() => <ContactPage />} />
         </Switch>
       </div>
     );

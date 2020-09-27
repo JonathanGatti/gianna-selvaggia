@@ -32,9 +32,8 @@ export default function ButtonAppBar() {
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             <Link className={classes.link} to='/'>Home</Link>
-            <Link to='/'>Contact</Link>
+            <Link to='/contact'>Contact</Link>
           </Typography>
-          <mdiInstagram />
         </Toolbar>
       </AppBar>
     </div>

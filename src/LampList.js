@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     margin: '3rem',
-    backgroundColor: 'rgba(255,255,255,0.3)',
+    backgroundColor: 'rgba(255,255,255,0.5)',
     width: '300px',
     '&:hover': {
       transform: 'scale(1.05)',
@@ -40,10 +41,9 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: '100%',
   },
   link: {
-    textDecoration: 'none',
-    color: 'rgba(255,255,255,0.9)',
-    marginLeft: '0.35em',
-    fontSize: '2rem',
+    color: 'black',
+    opacity: '0.7',
+    fontSize: '1.2rem',
   }
 }));
 
@@ -68,29 +68,34 @@ export default function LampList(props) {
                   <img className={classes.img} 
                       src={require(`./imgs/${lamp.src}`)} alt='lamp' />
                 </CardMedia>
-                <CardActionArea>
-                  <Link 
+                <Link 
                     gutterBottom 
                     className={classes.link} 
                     to={`/lamps/${lamp.type}/${lamp.name}`}>
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
-                        {lamp.name}
-                      </Typography>
-                      <Typography 
-                        variant="body2" 
-                        color="textSecondary" 
-                        component="p">
-                        {lamp.description}
-                      </Typography>
-                    </CardContent>
-                  </Link>
-                </CardActionArea>
+                  <CardActionArea>
+                      <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          {lamp.name}
+                        </Typography>
+                        <Typography 
+                          variant="body2" 
+                          color="textSecondary" 
+                          component="p">
+                          {lamp.description}
+                        </Typography>
+                      </CardContent>
+                  </CardActionArea>
+                </Link>
               </Card>
             </Grid>
           ))}
         </Grid>
-        <Link className={classes.link}to='/'>Go Back</Link>
+        <Button component={ Link } 
+                variant='contained'
+                color='default' to='/' 
+                className={classes.link} >
+                    Go Back
+        </Button>
     </div>
   );
 }
