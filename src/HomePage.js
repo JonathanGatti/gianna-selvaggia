@@ -39,13 +39,13 @@ class HomePage extends Component {
           <div className='HomePage-link'>
             <Link to='/lamps/table'>
               <p>Table Lamps</p>
-            <img src={require('./imgs/cirene.jpg')} alt='table lamps link'/>
+            <img src={require('./imgs/krea.jpg')} alt='table lamps link'/>
             </Link>
           </div>
           <div className='HomePage-link'>
             <Link to='/lamps/clocks'>
               <p>The Time Collection</p>
-            <img src={require('./imgs/cirene.jpg')} alt='clocks link'/>
+            <img src={require('./imgs/moon.jpg')} alt='clocks link'/>
             </Link>
           </div>
         </div>

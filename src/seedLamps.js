@@ -86,7 +86,7 @@ export default [
   {
     name: 'Spiral to heaven',
     price: '£330',
-    description: 'ENGRAVED COPPER WIHT CRYSTALS AND COPPER PENDANTS COPPER WIRE',
+    description: 'ENGRAVED COPPER WITH CRYSTALS AND COPPER PENDANTS COPPER WIRE',
     type: 'ceiling',
     src: 'spiral.jpg',
     dimension: {
@@ -171,7 +171,7 @@ export default [
     name: 'Utube',
     price: '£180',
     description: 'CAST IRON BASE WITH WHITE PLASTIC TUBE AND BEATEN COPPER WHIRE',
-    type: 'ceiling',
+    type: 'table',
     src: 'utube.jpg',
     dimension: {
       height: 52,
@@ -179,5 +179,160 @@ export default [
       width: 18,
     }
   },
-  
+  {
+    name: 'Pippa',
+    price: '£210',
+    description: 'RUSTY IRON ARIAL TILE WITH GOLD SILVER BLACK SPARY PAINT',
+    type: 'ceiling',
+    src: 'pippa.jpg',
+    dimension: {
+      height: 52,
+      length: 18,
+      width: 18,
+    }
+  },
+  {
+    name: 'Nest',
+    price: '£270',
+    description: 'CHROCHET TELEPHONE WIRES',
+    type: 'ceiling',
+    src: 'nest.jpg',
+    dimension: {
+      height: 50,
+      length: 26,
+      width: 26,
+    }
+  },
+  {
+    name: 'Spiralis',
+    price: '£300',
+    description: 'COPPER SATIN STRIP WITH OXIDIZED AND UNOXIDIZED COPPER, WITH CRYSTALS PENDENTS',
+    type: 'ceiling',
+    src: 'spiralis.jpg',
+    dimension: {
+      height: 70,
+      length: 30,
+      width: 30,
+    }
+  },
+  {
+    name: 'timeless',
+    price: '£300',
+    description: 'BEATEN COPPER BASE WITH NICHEL RAYS AND NICHEL NUMBERS',
+    type: 'clocks',
+    src: 'timeless.jpg',
+    dimension: {
+      height: 27,
+      length: 46,
+      width: 46,
+    }
+  },
+  {
+    name: 'Copper Sun Clock',
+    price: '£270',
+    description: 'BEATEN COPPER WITH MALACHITE CABOCHON AND SET OF LAPIS LAZULI',
+    type: 'clocks',
+    src: 'sun.jpg',
+    dimension: {
+      height: 6,
+      length: 60,
+      width: 60,
+    }
+  },
+  {
+    name: 'One to Twelve',
+    price: '£300',
+    description: 'BEATEN COPPER WITH NICHEL BASE AND NICHEL RAYS PLUS COPPER HANDS',
+    type: 'clocks',
+    src: 'onetotwelve.jpg',
+    dimension: {
+      height: 24,
+      length: 70,
+      width: 70,
+    }
+  },
+  {
+    name: "World's End",
+    price: '£70',
+    description: 'WOODEN BASE AND MIXED SEMIPRECIUOS STONES',
+    type: 'clocks',
+    src: 'worldsend.jpg',
+    dimension: {
+      height: 4,
+      length: 36,
+      width: 29,
+    }
+  },
+  {
+    name: "Fossil Clock",
+    price: '£70',
+    description: 'WOODEN BASE AND MIXED SEMIPRECIUOS STONES',
+    type: 'clocks',
+    src: 'fossil.jpg',
+    dimension: {
+      height: 4,
+      length: 40,
+      width: 22,
+    }
+  },
+  {
+    name: "Silver Sun",
+    price: '£180',
+    description: 'BEATEN ALLUMINIUM WITH METAL HANDS AND GLASS BEADS',
+    type: 'clocks',
+    src: 'silversun.jpg',
+    dimension: {
+      height: 5,
+      length: 68,
+      width: 68,
+    }
+  },
+  {
+    name: "Camel",
+    price: '£70',
+    description: 'BEATEN COPPER',
+    type: 'clocks',
+    src: 'camel.jpg',
+    dimension: {
+      height: 4,
+      length: 22,
+      width: 18,
+    }
+  },
+  {
+    name: "Sunset",
+    price: '£180',
+    description: 'BEATEN ALLUMINIUM WITH COPPER INSERTS AND METAL HANDS',
+    type: 'clocks',
+    src: 'sunset.jpg',
+    dimension: {
+      height: 5,
+      length: 80,
+      width: 80,
+    }
+  },
+  {
+    name: "Starlight",
+    price: '£70',
+    description: 'BEATEN ALLUMINIUM WITH PLASTIC FILM',
+    type: 'clocks',
+    src: 'starlight.jpg',
+    dimension: {
+      height: 2,
+      length: 37,
+      width: 37,
+    }
+  },
+  {
+    name: "Moon",
+    price: '£70',
+    description: 'BEATEN COPPER WITH COPPER HANDS',
+    type: 'clocks',
+    src: 'moon.jpg',
+    dimension: {
+      height: 5,
+      length: 21,
+      width: 14,
+    }
+  },
 ]
