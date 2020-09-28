@@ -15,12 +15,13 @@ const useStyles = makeStyles((theme) => ({
     flexBasis: '25%',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginLeft: '80px',
   },
   root: {
     flexGrow: 1,
     margin: '3rem',
-    backgroundColor: 'rgba(255,255,255,0.5)',
+    backgroundColor: 'transparent',
     width: '300px',
     '&:hover': {
       transform: 'scale(1.05)',
@@ -41,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: '100%',
   },
   link: {
-    color: 'black',
     opacity: '0.7',
     fontSize: '1.2rem',
   }
@@ -73,13 +73,13 @@ export default function LampList(props) {
                     className={classes.link} 
                     to={`/lamps/${lamp.type}/${lamp.name}`}>
                   <CardActionArea>
-                      <CardContent>
+                      <CardContent className={classes.card}>
                         <Typography gutterBottom variant="h5" component="h2">
                           {lamp.name}
                         </Typography>
                         <Typography 
                           variant="body2" 
-                          color="textSecondary" 
+                          color="white" 
                           component="p">
                           {lamp.description}
                         </Typography>

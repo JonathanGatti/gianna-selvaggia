@@ -216,7 +216,7 @@ export default [
     }
   },
   {
-    name: 'timeless',
+    name: 'Timeless',
     price: '£300',
     description: 'BEATEN COPPER BASE WITH NICHEL RAYS AND NICHEL NUMBERS',
     type: 'clocks',

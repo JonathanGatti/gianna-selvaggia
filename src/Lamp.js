@@ -17,30 +17,36 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     margin: 'auto',
     maxWidth: '45%',
-    backgroundColor: 'rgba(255,255,255,0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 1)',
   },
   image: {
-    width: 250,
-    height: 250,
+    width: 300,
+    height: 300,
   },
   img: {
     maxWidth: '100%',
     maxHeight: '100%',
   },
   title: {
-    fontSize: '2.5rem'
+    fontSize: '2.5rem',
+    color: 'rgba(255, 255, 255, 0.7)'
   },
   description: {
-    fontSize: '1.1em'
+    fontSize: '1.1em',
+    color: 'rgba(255, 255, 255, 0.7)'
   },
   price: {
-    fontSize: '2rem'
+    fontSize: '2rem',
+    color: 'rgba(255, 255, 255, 0.7)'
   },
   btns: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
   },
+  btn: {
+    backgroundColor: 'rgba(255, 255, 255, 0.7)'
+  }
 }));
 
 function Lamp (props){
@@ -69,7 +75,7 @@ function Lamp (props){
                   <Typography className={classes.description} variant="body2" gutterBottom>
                     Dimensions:
                   </Typography>
-                  <Typography className={classes.description} variant="body2" color="textSecondary">
+                  <Typography className={classes.description} variant="body2">
                     Height: {dimension.height}, Length: {dimension.length}, Width: {dimension.width}
                   </Typography>
                 </Grid>
@@ -77,7 +83,7 @@ function Lamp (props){
                   <Typography variant="body2" style={{ cursor: 'pointer' }}>
                   <Button 
                     variant='contained'
-                    color='default'
+                    color='rgba(255, 255, 255, 0.7)'
                     className={classes.btn}
                     onClick={() => history.goBack()}>
                     Go Back
@@ -86,8 +92,8 @@ function Lamp (props){
                   <Typography variant="body2" style={{ cursor: 'pointer' }}>
                   <Button component={ Link } 
                           variant='contained'
-                          color='default' to='/contact' 
-                          className={classes.link} >
+                          to='/contact' 
+                          className={classes.btn} >
                     Contact Us
                   </Button>
                   </Typography>

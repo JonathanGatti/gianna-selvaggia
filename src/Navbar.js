@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   link: {
-    marginRight: '10px'
+    marginRight: '10px',
+    fontSize: '1.5rem'
   }
 }));
 
@@ -32,7 +33,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             <Link className={classes.link} to='/'>Home</Link>
-            <Link to='/contact'>Contact</Link>
+            <Link className={classes.link} to='/contact'>Contact</Link>
           </Typography>
         </Toolbar>
       </AppBar>
