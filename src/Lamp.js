@@ -1,53 +1,11 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import ContactPage from './ContactPage'
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import ButtonBase from '@material-ui/core/ButtonBase';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    margin: 'auto',
-    maxWidth: '45%',
-    backgroundColor: 'rgba(0, 0, 0, 1)',
-  },
-  image: {
-    width: 300,
-    height: 300,
-  },
-  img: {
-    maxWidth: '100%',
-    maxHeight: '100%',
-  },
-  title: {
-    fontSize: '2.5rem',
-    color: 'rgba(255, 255, 255, 0.7)'
-  },
-  description: {
-    fontSize: '1.1em',
-    color: 'rgba(255, 255, 255, 0.7)'
-  },
-  price: {
-    fontSize: '2rem',
-    color: 'rgba(255, 255, 255, 0.7)'
-  },
-  btns: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
-  btn: {
-    backgroundColor: 'rgba(255, 255, 255, 0.7)'
-  }
-}));
+import useStyles from './styles/LampStyles';
 
 function Lamp (props){
     const classes = useStyles();
@@ -59,9 +17,10 @@ function Lamp (props){
         <Paper className={classes.paper}>
           <Grid container spacing={2}>
             <Grid item>
-              <ButtonBase className={classes.image}>
-                <img className={classes.img} alt={`${name}`} src={require(`./imgs/${src}`)} />
-              </ButtonBase>
+              <div className={classes.image}>
+                    <img className={classes.img} 
+                    alt={`${name}`} src={require(`./imgs/${src}`)} />
+              </div>
             </Grid>
             <Grid item xs={12} sm container>
               <Grid item xs container direction="column" spacing={2}>

@@ -1,15 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    fontSize: '1.3rem',
-    justifyContent: 'space-between'
-  },
-}))
+import useStyles from './styles/ContactPageStyles';
 
 export default function ContactPage(){
   const classes = useStyles();

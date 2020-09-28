@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid';
@@ -8,44 +7,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import useStyles from './styles/LampListStyles'
 
-const useStyles = makeStyles((theme) => ({
-  container: {
-    display: 'flex',
-    flexBasis: '25%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    marginLeft: '80px',
-  },
-  root: {
-    flexGrow: 1,
-    margin: '3rem',
-    backgroundColor: 'transparent',
-    width: '300px',
-    '&:hover': {
-      transform: 'scale(1.05)',
-    transition: '0.2s ease-in-out'
-    }
-  },
-  media: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: '100%',
-    height: '100%'
-  },
-  img: {
-    width: '300px',
-    height: '300px',
-    maxWidth: '100%',
-    maxHeight: '100%',
-  },
-  link: {
-    opacity: '0.7',
-    fontSize: '1.2rem',
-  }
-}));
 
 export default function LampList(props) {
   const classes = useStyles();
@@ -74,12 +37,12 @@ export default function LampList(props) {
                     to={`/lamps/${lamp.type}/${lamp.name}`}>
                   <CardActionArea>
                       <CardContent className={classes.card}>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h4" component="h2">
                           {lamp.name}
                         </Typography>
                         <Typography 
-                          variant="body2" 
-                          color="white" 
+                          variant="h6" 
+                          color="rgba(255, 255, 255, 0.7)" 
                           component="p">
                           {lamp.description}
                         </Typography>

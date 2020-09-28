@@ -156,7 +156,7 @@ export default [
     }
   },
   {
-    name: 'KALIAS',
+    name: 'Kalias',
     price: '£300',
     description: 'CHROMED GRILL FAN WITH BEATEN STAINLESS STEEL BASE',
     type: 'ceiling',
