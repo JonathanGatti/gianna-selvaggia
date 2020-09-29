@@ -20,14 +20,14 @@ class App extends Component {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path='/' render={() => <HomePage lamps={seedLamps}/>} />
+          <Route exact path='/gianna-selvaggia' render={() => <HomePage lamps={seedLamps}/>} />
           <Route 
             exact 
-            path='/lamps/:type' 
+            path='gianna-selvaggia/lamps/:type' 
             render={(routeProps) => 
               <LampList {...routeProps} lamps={seedLamps} />} />
-          <Route exact path='/lamps/:type/:name' render={getLamp} />
-          <Route exact path='/contact' render={() => <ContactPage />} />
+          <Route exact path='gianna-selvaggia/lamps/:type/:name' render={getLamp} />
+          <Route exact path='gianna-selvaggia/contact' render={() => <ContactPage />} />
         </Switch>
       </div>
     );

@@ -60,7 +60,7 @@ export default function LampList(props) {
         </Grid>
         <Button component={ Link } 
                 variant='contained'
-                color='default' to='/' 
+                color='default' to='/gianna-selvaggia' 
                 className={classes.link} >
                     Go Back
         </Button>
