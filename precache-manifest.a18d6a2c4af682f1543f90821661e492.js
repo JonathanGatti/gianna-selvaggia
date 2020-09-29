@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01f8b40c3d43ce9c1caaed29b3856cfa",
+    "revision": "c77d36308d7ca50b38c07baed167f19e",
     "url": "/gianna-selvaggia/index.html"
   },
   {
-    "revision": "c4cc4d22ff786dedd741",
+    "revision": "135bd8ef707f9d0c2dac",
     "url": "/gianna-selvaggia/static/css/main.7782e9ce.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gianna-selvaggia/static/js/2.9dc7b072.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c4cc4d22ff786dedd741",
-    "url": "/gianna-selvaggia/static/js/main.afa7c04d.chunk.js"
+    "revision": "135bd8ef707f9d0c2dac",
+    "url": "/gianna-selvaggia/static/js/main.d85100a3.chunk.js"
   },
   {
     "revision": "20407288924b353c3ee5",

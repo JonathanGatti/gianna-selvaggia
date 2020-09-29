@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gianna-selvaggia/static/css/main.7782e9ce.chunk.css",
-    "main.js": "/gianna-selvaggia/static/js/main.afa7c04d.chunk.js",
-    "main.js.map": "/gianna-selvaggia/static/js/main.afa7c04d.chunk.js.map",
+    "main.js": "/gianna-selvaggia/static/js/main.d85100a3.chunk.js",
+    "main.js.map": "/gianna-selvaggia/static/js/main.d85100a3.chunk.js.map",
     "runtime-main.js": "/gianna-selvaggia/static/js/runtime-main.51ce6be2.js",
     "runtime-main.js.map": "/gianna-selvaggia/static/js/runtime-main.51ce6be2.js.map",
     "static/js/2.9dc7b072.chunk.js": "/gianna-selvaggia/static/js/2.9dc7b072.chunk.js",
     "static/js/2.9dc7b072.chunk.js.map": "/gianna-selvaggia/static/js/2.9dc7b072.chunk.js.map",
     "index.html": "/gianna-selvaggia/index.html",
-    "precache-manifest.bed449e6dc450175d9ab6a79c8e3dcf9.js": "/gianna-selvaggia/precache-manifest.bed449e6dc450175d9ab6a79c8e3dcf9.js",
+    "precache-manifest.a18d6a2c4af682f1543f90821661e492.js": "/gianna-selvaggia/precache-manifest.a18d6a2c4af682f1543f90821661e492.js",
     "service-worker.js": "/gianna-selvaggia/service-worker.js",
     "static/css/main.7782e9ce.chunk.css.map": "/gianna-selvaggia/static/css/main.7782e9ce.chunk.css.map",
     "static/js/2.9dc7b072.chunk.js.LICENSE.txt": "/gianna-selvaggia/static/js/2.9dc7b072.chunk.js.LICENSE.txt",
@@ -57,6 +57,6 @@
     "static/js/runtime-main.51ce6be2.js",
     "static/js/2.9dc7b072.chunk.js",
     "static/css/main.7782e9ce.chunk.css",
-    "static/js/main.afa7c04d.chunk.js"
+    "static/js/main.d85100a3.chunk.js"
   ]
 }
