@@ -12,18 +12,6 @@ export default [
     }
   },
   {
-    name: 'Mante',
-    price: '£300',
-    description: 'ROLLED BEATEN COPPER OPEN CYLINDER',
-    type: 'table',
-    src: 'mante.jpg',
-    dimension: {
-      height: 47,
-      length: 15,
-      width: 19,
-    }
-  },
-  {
     name: 'Cirene',
     price: '£300',
     description: 'ROLLED BEATEN COPPER OPEN CYLINDER',
@@ -180,6 +168,18 @@ export default [
     }
   },
   {
+    name: 'Mante',
+    price: '£300',
+    description: 'ROLLED BEATEN COPPER OPEN CYLINDER',
+    type: 'table',
+    src: 'mante.jpg',
+    dimension: {
+      height: 47,
+      length: 15,
+      width: 19,
+    }
+  },
+  {
     name: 'Pippa',
     price: '£210',
     description: 'RUSTY IRON ARIAL TILE WITH GOLD SILVER BLACK SPARY PAINT',
@@ -213,6 +213,139 @@ export default [
       height: 70,
       length: 30,
       width: 30,
+    }
+  },
+  {
+    name: 'Rialto Bridge',
+    price: '£120',
+    description: 'CUT AND SHAPED COPPER PANEL',
+    type: 'ceiling',
+    src: 'rialto.jpg',
+    dimension: {
+      height: 11,
+      length: 36,
+      width: 10,
+    }
+  },
+  {
+    name: 'Diko1',
+    price: '£100',
+    description: 'TUBOLAR FISHING NET WITH CROCHET COPPER WIRE',
+    type: 'ceiling',
+    src: 'diko1.jpg',
+    dimension: {
+      height: 54,
+      length: 8,
+      width: 8,
+    }
+  },
+  {
+    name: 'Diko2',
+    price: '£100',
+    description: 'TUBOLAR FISHING NET WITH CROCHET COPPER WIRE',
+    type: 'ceiling',
+    src: 'diko2.jpg',
+    dimension: {
+      height: 72,
+      length: 12,
+      width: 12,
+    }
+  },
+  {
+    name: 'Diko3',
+    price: '£100',
+    description: 'TUBOLAR FISHING NET WITH ALUMINIUM PINK WIRE SPIRALS AND CROCHET COPPER WIRE',
+    type: 'ceiling',
+    src: 'diko3.jpg',
+    dimension: {
+      height: 54,
+      length: 44,
+      width: 33,
+    }
+  },
+  {
+    name: 'Samurai',
+    price: '£300',
+    description: 'CROCHET BLACK TELEPHONE WIRES AND CHROCHET COPPER WIRE',
+    type: 'ceiling',
+    src: 'samurai.jpg',
+    dimension: {
+      height: 44,
+      length: 42,
+      width: 2,
+    }
+  },
+
+  {
+    name: 'Elf',
+    price: '£210',
+    description: 'CROCHET COPPER WIRE AND COPPER PENDANTS WITH BEATEN COPPPER SPIRALS',
+    type: 'ceiling',
+    src: 'elf.jpg',
+    dimension: {
+      height: 50,
+      length: 32,
+      width: 32,
+    }
+  },
+  {
+    name: 'Sieving Light',
+    price: '£210',
+    description: 'OLD METAL SIEVE WITH BEATEN COPPER SPIRALS AND BALCK METAL CHAIN',
+    type: 'ceiling',
+    src: 'sieving.jpg',
+    dimension: {
+      height: 20,
+      length: 36,
+      width: 38,
+    }
+  },
+  {
+    name: 'Alu Crystal',
+    price: '£210',
+    description: 'ENGRAVED BEATEN RECYCLED ALUMINIUM LAMPSHADE WITH SILVER SPIRAL CRYSTALS',
+    type: 'ceiling',
+    src: 'alu.jpg',
+    dimension: {
+      height: 36,
+      length: 36,
+      width: 36,
+    }
+  },
+  {
+    name: 'Kroner',
+    price: '£210',
+    description: 'VINATEGE BRASS LAMPSHADE WITH RECYCLED PIECES AND A COPPER WIRE CHAIN',
+    type: 'ceiling',
+    src: 'kroner.jpg',
+    dimension: {
+      height: 26,
+      length: 46,
+      width: 46,
+    }
+  },
+  {
+    name: 'Red Tube',
+    price: '£210',
+    description: 'BLACK RUBBER BASE WITH A RED PLASTIC TUBE',
+    type: 'ceiling',
+    src: 'red.jpg',
+    dimension: {
+      height: 154,
+      length: 26,
+      width: 26,
+    }
+  },
+  {
+    name: 'Medusa',
+    price: '£210',
+    description: 'CROCHET TELEPHONE WIRES',
+    type: 'ceiling',
+    src: 'medusa.jpg',
+    dimension: {
+      height: 45,
+      length: 24,
+      width: 24,
     }
   },
   {
@@ -335,4 +468,5 @@ export default [
       width: 14,
     }
   },
+
 ]

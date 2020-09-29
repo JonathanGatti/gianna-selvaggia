@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
   },
   headerContainer: {
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center'
   },
   headerText: {
@@ -24,17 +23,16 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: '0.3rem',
   },
   intro: {
-    fontSize: '1.5em'
+    fontSize: '18px'
   },
   title: {
-    fontSize: '3rem',
+    fontSize: '32px',
+    marginTop: '100px',
     fontWeight: '300',
-    letterSpacing: '0.3rem',
-    marginTop: '3rem',
   },
   h2: {
     fontWeight: '300',
-    fontSize: '2.3em',
+    fontSize: '28px',
     margin: 0
   },
   linksContainer: {
@@ -42,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-around'
   },
-  '@media (max-width: 1100px)':{
+  '@media (max-width: 900px)':{
     linksContainer: {
       display: 'flex',
       flexDirection: 'column'
@@ -50,13 +48,17 @@ const useStyles = makeStyles((theme) => ({
     headerContainer: {
       display: 'flex',
       flexDirection: 'column'
+    },
+    homeImg : {
+      marginLeft: '200px',
+      marginTop: 0
     }
   },
   link: {
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
-    fontSize: '2em',
+    fontSize: '24px',
     letterSpacing: '0.1em',
     '&:hover':{
       transform: 'scale(1.05)',

@@ -9,7 +9,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import useStyles from './styles/LampListStyles'
 
-
 export default function LampList(props) {
   const classes = useStyles();
   const { type } = props.match.params;
@@ -20,8 +19,15 @@ export default function LampList(props) {
       )
       return lampType
     }
+    const getTitle = (type) => {
+      const lampType = getType(type)[0].type;
+      if(lampType === 'clocks') return 'The Time Colletion'
+      else if(lampType === 'ceiling') return 'Chandeliers'
+      else if(lampType === 'table') return 'Table Lamps'
+    }
   return (
     <div className={classes.container}>
+        <h1 className={classes.title}>{getTitle(type)}</h1>
         <Grid container spacing={3}>
           {getType(type).map(lamp => (
             <Grid item md={6} lg={4} xl={3}>
@@ -37,11 +43,10 @@ export default function LampList(props) {
                     to={`/lamps/${lamp.type}/${lamp.name}`}>
                   <CardActionArea>
                       <CardContent className={classes.card}>
-                        <Typography gutterBottom variant="h4" component="h2">
+                        <Typography gutterBottom variant="h5" component="h4">
                           {lamp.name}
                         </Typography>
                         <Typography 
-                          variant="h6" 
                           color="rgba(255, 255, 255, 0.7)" 
                           component="p">
                           {lamp.description}

@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     margin: 'auto',
-    maxWidth: '40%',
+    maxWidth: '50%',
     backgroundColor: 'rgba(0, 0, 0, 1)',
     color: 'rgba(255, 255, 255, 0.7)'
   },
@@ -16,17 +16,18 @@ const useStyles = makeStyles((theme) => ({
     height: '300px',
   },
   img: {
+    float: 'right',
     maxWidth: '100%',
     maxHeight: '100%',
   },
   title: {
-    fontSize: '2.8rem',
+    fontSize: '22px',
   },
   description: {
-    fontSize: '1.4em',
+    fontSize: '18px',
   },
   price: {
-    fontSize: '2rem',
+    fontSize: '22px',
   },
   btns: {
     display: 'flex',
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
   },
   btn: {
-    fontSize: '1.2rem',
+    fontSize: '13px',
     backgroundColor: 'rgba(255, 255, 255, 0.7)'
   }
 }));

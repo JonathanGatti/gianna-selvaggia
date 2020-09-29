@@ -18,6 +18,7 @@ function  HomePage() {
                 </p>
             </div>
               <img 
+                className={classes.homeImg}
                 src={require('./imgs/home/homepage.jpg')} alt='homepage'/>
           </div>
         <div>

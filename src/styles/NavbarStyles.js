@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     marginRight: '10px',
-    fontSize: '2rem'
+    fontSize: '22px'
   }
 }));
 
