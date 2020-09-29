@@ -13,7 +13,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             <Link className={classes.link} to='/gianna-selvaggia'>Home</Link>
-            <Link className={classes.link} to='gianna-selvaggia/contact'>Contact</Link>
+            <Link className={classes.link} to='/gianna-selvaggia/contact'>Contact</Link>
           </Typography>
         </Toolbar>
       </AppBar>

@@ -51,7 +51,7 @@ function Lamp (props){
                   <Typography variant="body2" style={{ cursor: 'pointer' }}>
                   <Button component={ Link } 
                           variant='contained'
-                          to='gianna-selvaggia/contact' 
+                          to='/gianna-selvaggia/contact' 
                           className={classes.btn} >
                     Contact Us
                   </Button>

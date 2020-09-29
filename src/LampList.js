@@ -21,7 +21,7 @@ export default function LampList(props) {
     }
     const getTitle = (type) => {
       const lampType = getType(type)[0].type;
-      if(lampType === 'clocks') return 'The Time Colletion'
+      if(lampType === 'clocks') return 'The Time Collection'
       else if(lampType === 'ceiling') return 'Chandeliers'
       else if(lampType === 'table') return 'Table Lamps'
     }
@@ -40,7 +40,7 @@ export default function LampList(props) {
                 <Link 
                     gutterBottom 
                     className={classes.link} 
-                    to={`/lamps/${lamp.type}/${lamp.name}`}>
+                    to={`/gianna-selvaggia/lamps/${lamp.type}/${lamp.name}`}>
                   <CardActionArea>
                       <CardContent className={classes.card}>
                         <Typography gutterBottom variant="h5" component="h4">
