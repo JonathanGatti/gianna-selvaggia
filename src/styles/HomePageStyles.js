@@ -47,11 +47,16 @@ const useStyles = makeStyles((theme) => ({
     },
     headerContainer: {
       display: 'flex',
-      flexDirection: 'column'
+      flexDirection: 'column',
+      marginTop: 0,
+      alignItems: 'center',
+      justifyContent: 'center'
     },
-    homeImg : {
-      marginLeft: '200px',
-      marginTop: 0
+    homeImg: {
+      display: 'none'
+    },
+    title: {
+      marginTop: '1px'
     }
   },
   link: {

@@ -20,6 +20,15 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%',
     maxHeight: '100%',
   },
+  '@media (max-width: 900px)': {
+    img: {
+      float: 'left'
+    },
+    btn: {
+      width: '100px',
+      height: '45px',
+    }
+  },
   title: {
     fontSize: '22px',
   },

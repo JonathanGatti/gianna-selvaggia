@@ -22,9 +22,15 @@ const useStyles = makeStyles((theme) => ({
       transition: 'all 0.2s ease-in-out'
     }
   },
-  '@media (max-width: 900px)':{
+  '@media (max-width: 1200px)':{
+    container: {
+      width: '80%',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
     root: {
-      marginLeft: '100px',
       marginTop: '10px'
     }
   },
