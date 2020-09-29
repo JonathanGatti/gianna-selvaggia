@@ -40,7 +40,7 @@ export default function LampList(props) {
                 <Link 
                     gutterBottom 
                     className={classes.link} 
-                    to={`/gianna-selvaggia/lamps/${lamp.type}/${lamp.name}`}>
+                    to={`/lamps/${lamp.type}/${lamp.name}`}>
                   <CardActionArea>
                       <CardContent className={classes.card}>
                         <Typography gutterBottom variant="h5" component="h4">

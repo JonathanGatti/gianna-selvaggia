@@ -26,7 +26,7 @@ function  HomePage() {
         </div>
         <div className={classes.linksContainer}>
           <div className={classes.link} >
-            <Link to='/gianna-selvaggia/lamps/ceiling'>
+            <Link to='/lamps/ceiling'>
               <p>Chandeliers</p>
             <img 
               style={{width: '300px', height: '300px', borderRadius: '5px'}}
@@ -35,7 +35,7 @@ function  HomePage() {
             </Link>
           </div>
           <div className={classes.link}>
-            <Link to='/gianna-selvaggia/lamps/table'>
+            <Link to='/lamps/table'>
               <p>Table Lamps</p>
             <img 
               style={{width: '300px', height: '300px', borderRadius: '5px'}}
@@ -44,7 +44,7 @@ function  HomePage() {
             </Link>
           </div>
           <div className={classes.link}>
-            <Link to='/gianna-selvaggia/lamps/clocks'>
+            <Link to='/lamps/clocks'>
               <p>The Time Collection</p>
             <img 
               style={{width: '300px', height: '300px', borderRadius: '5px'}}

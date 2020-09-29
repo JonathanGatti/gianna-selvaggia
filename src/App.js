@@ -23,10 +23,10 @@ class App extends Component {
           <Route exact path='/gianna-selvaggia' render={() => <HomePage lamps={seedLamps}/>} />
           <Route 
             exact 
-            path='/gianna-selvaggia/lamps/:type' 
+            path='/lamps/:type' 
             render={(routeProps) => 
               <LampList {...routeProps} lamps={seedLamps} />} />
-          <Route exact path='/gianna-selvaggia/lamps/:type/:name' render={getLamp} />
+          <Route exact path='/lamps/:type/:name' render={getLamp} />
           <Route exact path='/gianna-selvaggia/contact' render={() => <ContactPage />} />
         </Switch>
       </div>
