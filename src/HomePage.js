@@ -9,7 +9,7 @@ function  HomePage() {
       <div className={classes.root}>
           <div className={classes.headerContainer}>
             <div className={classes.headerText}>
-              <h1 className={classes.title}>Gianna Selvaggia</h1>
+              <h1 className={classes.title}>Jayne Selvaggio</h1>
                 <p className={classes.intro}>I LIKE TO RECYCLE BECAUSE MORE OR 
                   LESS ANYTHING CAN BE RECYCLED. IT IS 
                   TIME TO BE AWARE OF HOW TO CONTRIBUTE TO RECYCLING  
