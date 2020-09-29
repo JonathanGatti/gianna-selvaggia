@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71aa9825c8c476b8eb074a3ee9f2ea73",
+    "revision": "f1493024acdd26708433c148ae817651",
     "url": "/gianna-selvaggia/index.html"
   },
   {

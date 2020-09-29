@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gianna-selvaggia/precache-manifest.1d57020bbc0b3d1d7337b82dcd4b809a.js"
+  "/gianna-selvaggia/precache-manifest.095ad30835d4220ba46d5ece8f592852.js"
 );
 
 self.addEventListener('message', (event) => {
