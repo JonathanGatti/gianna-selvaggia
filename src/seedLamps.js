@@ -7,8 +7,8 @@ export default [
     src: 'alianor.jpg',
     dimension: {
       height: 57.5,
-      length: 22,
-      width: 19.5,
+      length: 23,
+      width: 20,
     }
   },
   {
@@ -135,7 +135,7 @@ export default [
     name: 'Blow Light',
     price: '£300',
     description: 'CHROMED GRILL FAN WITH BEATEN STAINLESS STEEL BASE',
-    type: 'ceiling',
+    type: 'table',
     src: 'blow.jpg',
     dimension: {
       height: 133,

@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     float: 'right',
-    maxWidth: '100%',
-    maxHeight: '100%',
+    maxWidth: '300px',
+    maxHeight: '300px',
   },
   '@media (max-width: 900px)': {
     img: {

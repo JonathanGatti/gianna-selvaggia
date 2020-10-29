@@ -35,10 +35,8 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   img: {
-    width: '300px',
-    height: '300px',
-    maxWidth: '100%',
-    maxHeight: '100%',
+    maxWidth: '300px',
+    maxHeight: '300px',
   },
   link: {
     fontSize: '16px',

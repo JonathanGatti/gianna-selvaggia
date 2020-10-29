@@ -6,7 +6,7 @@ export default function ContactPage(){
   return (
     <div className={classes.container}>
       <h1>Get In Touch</h1>
-      <p>For informations about the products and shipping cost please contact us at:</p>
+      <p>For more informations about the products and shipping cost please contact us at:</p>
       <span>Email: jayneselvaggio@gmail.com</span>
       <span>Phone: +44 7801 697362</span>
     </div>
